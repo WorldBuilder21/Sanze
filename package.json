@@ -1,5 +1,5 @@
 {
-  "homepage": "http://WorldBuilder21.github.io/deploy",
+  "homepage": "https://worldbuilder21.github.io",
   "name": "sanze",
   "version": "0.1.0",
   "private": true,
@@ -36,7 +36,7 @@
   "scripts": {
     "start": "react-scripts start",
     "predeploy": "npm run build",
-    "deploy": "gh-page -d build",
+    "deploy": "gh-pages -d build",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
