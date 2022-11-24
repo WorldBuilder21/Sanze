@@ -5,20 +5,14 @@ import { UserAuth } from "../../utils/Context/AuthContext";
 import { useDispatch } from "react-redux";
 import { useSelector } from "react-redux";
 import cinasoul from "./assets/images/cinasoul.jpg";
-import ojorleycover from "./assets/images/ojorleycover.jpeg";
-import zombiecover from "./assets/images/zombiecover.png";
+
 import fellakuti from "./assets/images/fellakuti.webp";
-import Abomvelocover from "./assets/images/Abomvelocover.jpg";
+
 import daliwonga from "./assets/images/daliwonga.jpg";
 import darkovibes from "./assets/images/darkovibes.jpg";
-import tomorrowcover from "./assets/images/tomorrowcover.webp";
-import diamondplatnumzcover from "./assets/images/diamondplatnumzcover.jpg";
+
 import Inama from "./assets/images/Inama.jpg";
 
-import lumba from "./assets/lumba.png";
-import darkosongphoto from "./assets/darkosongphoto.jpg";
-import "./styles.css";
-import { EllipsisVerticalIcon } from "@heroicons/react/20/solid";
 import { audios } from "../../audioData";
 import { getAudioData } from "../../utils/store/audio/audioSlice";
 
