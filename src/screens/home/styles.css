@@ -1,0 +1,246 @@
+/* Imported Fonts */
+@import url("https://fonts.googleapis.com/css2?family=Irish+Grover&family=Italiana&family=Poppins:wght@100;200;300;400;500;600;700;800&display=swap");
+
+/* General Settings */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+  text-decoration: none;
+}
+
+body {
+  background-color: rgb(17, 17, 17);
+}
+/* End Of General Settings */
+
+/* Generic Title */
+.title {
+  color: #fff;
+  font-family: "Poppins", sans-serif;
+  font-size: 2rem;
+  font-weight: bold;
+  text-align: center;
+  margin: 0;
+  margin-top: 3rem;
+  margin-bottom: 1rem;
+}
+/* End Of Generic Title */
+
+/* Banner Design */
+.banner {
+  /* background-image: url(../assets/hero.jpg); */
+  background-image: url(../home/assets/hero.jpg);
+  background-size: cover;
+  background-position: center center;
+  color: white;
+  object-fit: contain;
+  height: 500px;
+}
+
+.banner_contents {
+  margin-left: 50px;
+  padding-top: 190px;
+  height: 190px;
+}
+
+.banner_title {
+  font-family: "Poppins", sans-serif;
+  font-size: 3rem;
+  font-weight: 700;
+  padding-bottom: 0.3rem;
+}
+
+.banner_button {
+  font-family: "Poppins", sans-serif;
+  cursor: pointer;
+  color: #000;
+  outline: none;
+  border: none;
+  font-weight: 300;
+  letter-spacing: 0.5px;
+  border-radius: 0.5vw;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  margin-top: 0.15rem;
+  margin-right: 1rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  background-color: #f6f5f5;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.banner_button a {
+  color: #111;
+}
+
+.banner_button:hover {
+  color: #000;
+  background-color: rgba(255, 255, 255, 0.7);
+  transition: all 0.2s;
+}
+
+.banner_fadeBottom {
+  margin-top: 100px;
+  height: 13.5rem;
+  background-image: linear-gradient(
+    180deg,
+    transparent,
+    rgba(17, 17, 17, 0.61),
+    #111
+  );
+}
+/* End Of Banner Design */
+
+.holder {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.list-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(13rem, auto));
+  justify-content: center;
+  width: 100%;
+  height: auto;
+  margin-bottom: 1.5rem;
+}
+
+.artist-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(12rem, auto));
+  width: 100%;
+  justify-content: center;
+  height: auto;
+  margin-bottom: 1.5rem;
+}
+
+.card {
+  width: 11rem;
+  height: 11rem;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  margin: 1rem;
+  color: white;
+  background-size: cover;
+  border-radius: 1.5rem;
+  position: relative;
+  transition: all 0.35s ease;
+}
+
+.songart {
+  width: 11rem;
+  height: 11rem;
+  object-fit: cover;
+  border-radius: 1.5rem;
+}
+
+.details {
+  position: absolute;
+  width: 11rem;
+  height: auto;
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+  background-color: rgba(31, 29, 29, 0.5);
+  backdrop-filter: blur(3px);
+}
+
+.song-name {
+  font-family: "Poppins", sans-serif;
+  font-size: 0.85rem;
+  font-weight: 500;
+  margin: 10px 0px 0px 15px;
+  letter-spacing: 0.5px;
+}
+
+.song-name a {
+  font-weight: 500;
+  color: #fff;
+}
+
+.artist-name {
+  margin: 0px 0px 15px 15px;
+  font-family: "Poppins", sans-serif;
+  font-size: 0.8rem;
+  color: rgb(158, 153, 153);
+  letter-spacing: 0.5px;
+}
+
+.artist-image {
+  object-fit: cover;
+  height: 8rem;
+  width: 8rem;
+  border-radius: 50rem;
+}
+
+.artist-username {
+  color: #fff;
+  font-weight: 500;
+  margin-top: 0.6rem;
+  font-size: 0.9rem;
+}
+
+.artist-card {
+  margin: 1rem;
+  width: auto;
+  display: inline-block;
+  text-align: center;
+}
+
+@media (max-width: 480px) {
+  .title {
+    font-size: 1.8rem;
+    text-align: center;
+    margin: 0;
+    margin-top: 3rem;
+    margin-bottom: 1rem;
+  }
+  .card {
+    width: 15rem;
+    height: 7rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 1rem;
+    color: white;
+    background-size: cover;
+    border-radius: 1.5rem;
+    position: relative;
+    transition: all 0.35s ease;
+  }
+
+  .list-container {
+    grid-template-columns: repeat(auto-fit, minmax(15rem, auto));
+  }
+
+  .songart {
+    width: 15rem;
+    height: 7rem;
+    /* display: none; */
+  }
+
+  .details {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 15rem;
+    height: 7rem;
+    border-radius: 1.5rem;
+    background-color: rgba(31, 29, 29, 0.5);
+    backdrop-filter: none;
+  }
+
+  .artist-image {
+    height: 10rem;
+    width: 10rem;
+  }
+
+  .artist-container {
+    grid-template-columns: repeat(auto-fit, minmax(11rem, auto));
+  }
+}

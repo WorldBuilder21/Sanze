@@ -1,0 +1,112 @@
+@import url("https://fonts.googleapis.com/css2?family=Irish+Grover&family=Poppins:wght@100;200;400&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #000;
+}
+
+.homePage {
+  height: 100vh;
+  /* background-image: url(/assets/backgroundFull.jpg); */
+  background-image: url(../assets/backFull.jpg);
+  opacity: 0.9;
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+.logo-design {
+  width: 60px;
+  height: auto;
+}
+
+.container {
+  margin-bottom: 5rem;
+  width: 330px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.logo {
+  color: #fff;
+  font-family: "Irish Grover", cursive;
+  font-size: 4rem;
+}
+
+.description {
+  color: #fff;
+  font-family: "Poppins", sans-serif;
+  font-weight: 200;
+  font-size: 1.2rem;
+  text-align: center;
+}
+
+.call-to-action {
+  width: 16rem;
+  background-color: rgb(72, 231, 72);
+  color: #fff;
+  padding: 15px 50px 15px 50px;
+  border-radius: 10px;
+  font-family: "Poppins", sans-serif;
+  font-size: 1.4rem;
+  border: none;
+  cursor: pointer;
+}
+
+.call-to-action:hover {
+  transition: 0.3s;
+  background-color: rgba(60, 192, 60, 0.9);
+}
+
+.item {
+  margin: 15px 0 15px 0px;
+}
+
+@media only screen and (max-width: 600px) {
+  .homePage {
+    /* background-image: url(assets/home_background.png); */
+    background-image: url(../assets//home_background.png);
+  }
+}
+
+@media (min-width: 600px) {
+  .homePage {
+    /* background-image: url(assets/backgroundMedium.jpg); */
+    background-image: url(../assets/backgroundMedium.jpg);
+  }
+
+  .container {
+    width: 400px;
+  }
+
+  .logo {
+    color: #fff;
+    font-family: "Irish Grover", cursive;
+    font-size: 5rem;
+  }
+}
+
+@media only screen and (min-width: 800px) {
+  .homePage {
+    /* background-image: url(assets/backFull.jpg); */
+    background-image: url(../assets/backFull.jpg);
+  }
+
+  .container {
+    width: 400px;
+  }
+
+  .logo {
+    color: #fff;
+    font-family: "Irish Grover", cursive;
+    font-size: 5rem;
+  }
+}
